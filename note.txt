@@ -1,0 +1,20 @@
+gedit filename.l --> lex.yy.c  (.c file)
+gcc/cc [-o filename.out] lex.yy.c -ll  --> filename.out
+./filename.out
+
+// -ll is to link the lex library
+// if you don't include the lex library then have to include extra lines of code
+either:
+
+int yywrap()
+{
+return 0;
+}
+
+or:
+
+in the begining of the file :
+%option noyywrap;
+
+
+important: inside the %% everything is case sensitive so be carefull....
