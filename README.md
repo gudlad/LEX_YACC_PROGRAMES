@@ -1,4 +1,4 @@
-# Lex-Program-examples
+# Lex-Yacc-Program-examples
 
 How To Execute Lex Program?
 
